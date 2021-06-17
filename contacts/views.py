@@ -7,7 +7,7 @@ from .forms import ContactForm
 def list_contacts(request):
     contacts = Contact.objects.all()
     return render(request, "contacts/list_contacts.html",
-                  {"contacts": contacts})
+    {"contacts": contacts})
 
 
 def add_contact(request):
